@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [data, setData] = useState([]);
   const [inputValue, setInputValue] = useState('');
-
   useEffect(() => {
     fetchData();
   }, []);
