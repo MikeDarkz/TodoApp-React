@@ -31,7 +31,7 @@ function ActualizarTodo() {
   const handleSubmit = async () => {
     try {
       if (camposValidos()) {
-        const response = await fetch('http://35.87.80.23/index.php?id='+tarea.id, {
+        const response = await fetch('http://IP MÁQUINA VIRUAL/index.php?id='+tarea.id, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'

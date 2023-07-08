@@ -13,7 +13,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://35.87.80.23/index.php');
+      const response = await fetch('http://IP MÁQUINA VIRUAL/index.php');
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
@@ -27,7 +27,7 @@ function App() {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://35.87.80.23/index.php', {
+      const response = await fetch('http://IP MÁQUINA VIRUAL/index.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ function App() {
 
   const eliminarTarea = async(id) => {
     try {
-      const response = await fetch('http://35.87.80.23/index.php?id='+id, {
+      const response = await fetch('http://IP MÁQUINA VIRUAL/index.php?id='+id, {
         method: 'DELETE',
       });
       fetchData();
